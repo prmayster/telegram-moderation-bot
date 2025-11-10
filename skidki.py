@@ -3,9 +3,9 @@ import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
-BOT_TOKEN = os.getenv("8253929027:AAH3PdAREEYhaLyQmGClgJe10u3L4fD1afw")
-ADMIN_ID = int(os.getenv("566543738")) # Твой Telegram ID
-GROUP_ID = int(os.getenv("-2377760295")) # ID группы, куда публиковать
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
+GROUP_ID = int(os.getenv("GROUP_ID"))
 
 async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
